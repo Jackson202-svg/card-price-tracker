@@ -88,3 +88,16 @@ Set `PORT` if your host requires it. The included JSON file storage is suitable 
 ## Current limitations
 
 This is a working MVP, not yet a full commercial PriceCharting replacement. It currently has no user login, shared cloud collection, production database, automatic scheduled repricing, historical price charts, push notifications, or barcode scanner. These require additional backend services, provider access, and security work before a public multi-user launch.
+
+
+## Live market data and collection folders
+
+The hosted CardScope experience now includes a Live Market view backed by the public [TCGTracking API](https://openapi.tcgtracking.com/). It can load supported game categories, sets, card entries, and daily-updated TCGplayer market references without requiring a Google Search API key. Google Search links are used for public listing discovery; CardScope does not scrape Google result pages.
+
+- Open **Live Market**, choose a game, click **Load sets**, select a set, and click **Load cards & prices**.
+- The displayed value is a provider market reference, not a guaranteed sale price or condition-specific appraisal. Cards with no returned price remain unpriced.
+- Collection folders are stored in the current browser using local storage; they are not cloud-synced across devices in this Flask build.
+- Check the data provider's terms before commercial use.
+- Live web app: https://cardscope-7dvcm7.v2.appdeploy.ai/
+
+The React AppDeploy deployment is a separate hosted build; the GitHub repository remains the Flask/PWA implementation. Keep changes synchronized intentionally rather than assuming deployment automatically mirrors GitHub.
