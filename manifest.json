@@ -1,0 +1,9 @@
+{
+  "name":"CardScope Trading Card Tracker",
+  "short_name":"CardScope",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#0c0c14",
+  "theme_color":"#11111b",
+  "description":"Organize trading cards and track saved values."
+}
