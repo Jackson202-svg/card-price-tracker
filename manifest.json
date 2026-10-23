@@ -1,9 +1,15 @@
 {
-  "name":"CardScope Trading Card Tracker",
-  "short_name":"CardScope",
-  "start_url":"/",
-  "display":"standalone",
-  "background_color":"#0c0c14",
-  "theme_color":"#11111b",
-  "description":"Organize trading cards and track saved values."
+  "id": "/",
+  "name": "CardScope Trading Card Tracker",
+  "short_name": "CardScope",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0c0c14",
+  "theme_color": "#11111b",
+  "description": "Organize trading cards, track saved values, and manage your collection.",
+  "icons": [
+    {"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
 }
